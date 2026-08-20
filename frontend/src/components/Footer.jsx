@@ -10,7 +10,7 @@ const Footer = () => {
         <div>
           <img src={company.logo} alt="BMART" className="h-16 w-auto object-contain bg-white rounded-lg p-2 mb-4" />
           <p className="text-sm leading-relaxed text-gray-400">
-            BMART is your one-stop construction material supplier serving Trichy, Perambalur, Madurai and all of Tamil Nadu with quality products and reliable delivery.
+            BMART is your one-stop construction material supplier serving Across South India, tamil nadu, hyderabad, kerala and all of South India with quality products and reliable delivery.
           </p>
           <div className="flex gap-3 mt-5">
             <a href={company.social.instagram} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-gold hover:text-[color:var(--bmart-ink)] transition-colors"><Instagram size={18} /></a>
@@ -51,7 +51,7 @@ const Footer = () => {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-gray-500">
           <span>&copy; {new Date().getFullYear()} {company.legalName}. All rights reserved.</span>
-          <span>Built by <span className="brand-gold font-semibold">Billing Pro</span></span>
+          <span>Built by <span className="brand-gold font-semibold"> R I Billing Pro</span></span>
         </div>
       </div>
     </footer>

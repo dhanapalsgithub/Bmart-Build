@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Star, CheckCircle2, Truck, ShieldCheck, Clock, Sparkles, ChevronDown, MapPin } from 'lucide-react';
-import { stats, categories, bestPractices, reviews, faqs, heroVideo, heroPoster, warehouseImage, qualityImage, company } from '../mock/mock';
+import { ArrowRight, Star, CheckCircle2, Truck, ShieldCheck, Clock, Sparkles, ChevronDown, MapPin, Target, Compass, Layers, Users } from 'lucide-react';
+import { stats, bestPractices, reviews, faqs, heroVideo, heroPoster, warehouseImage,warehouseImage1,warehouseImage2,warehouseImage3,warehouseImage4,warehouseImage5,warehouseImage6,warehouseImage7,warehouseImage8,warehouseImage9,warehouseImage10,warehouseImage11,warehouseImage12,warehouseImage13,warehouseImage14,warehouseImage15, qualityImage, company } from '../mock/mock';
 import QuoteForm from '../components/QuoteForm';
 
 const SectionTitle = ({ eyebrow, title, center, light }) => (
@@ -13,6 +13,26 @@ const SectionTitle = ({ eyebrow, title, center, light }) => (
 
 const Home = () => {
   const [openFaq, setOpenFaq] = useState(0);
+
+  // Updated Categories Data matching your requirement
+  const categories = [
+    { id: 1, name: 'Cement', img: warehouseImage },
+    { id: 2, name: 'TMT Steels', img: warehouseImage1 },
+    { id: 3, name: 'Structural Steels', img: warehouseImage2 },
+    { id: 4, name: 'M-Sand / P-Sand', img: warehouseImage3 },
+    { id: 5, name: 'Aggregates', img: warehouseImage4 },
+    { id: 6, name: 'Bricks & Blocks', img: warehouseImage5 },
+    { id: 7, name: 'Tiles', img: warehouseImage6 },
+    { id: 8, name: 'Sanitaryware', img: warehouseImage7 },
+    { id: 9, name: 'Plumbing Materials', img: warehouseImage8 },
+    { id: 10, name: 'Electrical Materials', img: warehouseImage9 },
+    { id: 11, name: 'Paints & Accessories', img: warehouseImage10 },
+    { id: 12, name: 'Waterproofing Products', img: warehouseImage11 },
+    { id: 13, name: 'Construction Chemicals', img: warehouseImage12 },
+    { id: 14, name: 'Hardware & Tools', img: warehouseImage13 },
+    { id: 15, name: 'Roofing Materials', img: warehouseImage14 },
+    { id: 16, name: 'Bathroom & Kitchen Products', img: warehouseImage15 },
+  ];
 
   return (
     <div>
@@ -32,12 +52,12 @@ const Home = () => {
         </div>
         <div className="relative max-w-7xl mx-auto px-6 py-24 w-full">
           <div className="max-w-2xl animate-fadeup">
-            <span className="inline-flex items-center gap-2 bg-brand-gold text-[color:var(--bmart-ink)] font-bold text-sm px-4 py-1.5 rounded-full mb-6"><Sparkles size={15} /> Trusted since {company.since}</span>
+            <span className="inline-flex items-center gap-2 bg-brand-gold text-[color:var(--bmart-ink)] font-bold text-sm px-4 py-1.5 rounded-full mb-6"><Sparkles size={15} /> Build Better. Build with Trust.</span>
             <h1 className="text-4xl md:text-6xl font-black text-white leading-[1.05] mb-6">
-              The Best Building Materials Supplier in <span className="brand-gold">Tamil Nadu</span>
+              The Best Building Materials Supplier in <span className="brand-gold">South India</span>
             </h1>
             <p className="text-lg text-gray-200 mb-8 leading-relaxed">
-              BMART supplies contractors, developers and homeowners across Trichy, Perambalur, Madurai and all major districts — with 15,000+ products and fast, reliable delivery.
+             BMART supplies Individual House Owners, Civil Contractors, Builders & Developers, Architects, Civil Engineers, Interior Designers, Small Construction Companies, Apartment / Commercial Projects, Dealers & Resellers across south india  — with 15,000+ products and fast, reliable delivery.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="#quote" className="bg-brand-gold text-[color:var(--bmart-ink)] font-bold px-8 py-4 rounded-md hover:bg-[color:var(--bmart-gold-dark)] transition-colors flex items-center gap-2">Request a Quote <ArrowRight size={18} /></a>
@@ -59,16 +79,42 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ABOUT */}
+      {/* VISION & MISSION SECTION */}
+      <section className="py-16 bg-gray-50 border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 relative overflow-hidden">
+            <div className="w-12 h-12 rounded-xl bg-brand-gold/10 text-[color:var(--bmart-gold)] flex items-center justify-center mb-6">
+              <Compass size={28} />
+            </div>
+            <span className="text-xs font-bold tracking-[0.2em] uppercase brand-gold mb-2 block">Our Vision</span>
+            <h3 className="text-xl font-extrabold text-gray-900 mb-4">Excellence in Construction Branding</h3>
+            <p className="text-gray-600 leading-relaxed italic">
+              “To become one of the most trusted and preferred building materials brands, delivering quality, innovation and value to every construction project we serve.”
+            </p>
+          </div>
+          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 relative overflow-hidden">
+            <div className="w-12 h-12 rounded-xl bg-brand-gold/10 text-[color:var(--bmart-gold)] flex items-center justify-center mb-6">
+              <Target size={28} />
+            </div>
+            <span className="text-xs font-bold tracking-[0.2em] uppercase brand-gold mb-2 block">Our Mission</span>
+            <h3 className="text-xl font-extrabold text-gray-900 mb-4">Comprehensive Supply & Service</h3>
+            <p className="text-gray-600 leading-relaxed italic">
+              “To provide a comprehensive range of genuine, high-quality building materials at competitive prices, supported by professional service, dependable supply and on-time delivery.”
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ABOUT US */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
           <div>
-            <SectionTitle eyebrow="Who We Are" title="Serving Tamil Nadu with Quality Materials" />
-            <p className="text-gray-600 leading-relaxed mb-5">
-              BMART is a leading construction material supplier based in Tiruchirappalli (Trichy). We supply contractors, builders, developers, facility teams, retailers and homeowners across Tamil Nadu — with a special focus on Perambalur, Madurai and Trichy.
+            <SectionTitle eyebrow="About B Mart" title="A Trusted Partner in Building Better Spaces" />
+            <p className="text-gray-600 leading-relaxed mb-4">
+              At B MART, we believe that every strong structure begins with the right materials, the right quality and the right partner. We bring together a comprehensive range of quality building and construction materials under one trusted brand, making construction procurement simpler, smarter and more reliable.
             </p>
             <p className="text-gray-600 leading-relaxed mb-6">
-              Our range includes cement, blocks, electrical supplies, plumbing materials, hardware, sanitary ware, tiles and ceramics, bathroom and kitchen fittings, plywood, timber, hand tools, power tools, paints, waterproofing materials and safety equipment from established brands.
+              From individual home builders to contractors, architects, builders and large-scale projects, we are committed to delivering genuine products, competitive pricing, dependable supply and professional service at every stage of construction. Our core values stand strong on <strong className="text-gray-900">QUALITY • TRUST • VALUE • SERVICE</strong>.
             </p>
             <div className="grid grid-cols-2 gap-4">
               {bestPractices.map((b) => (
@@ -77,7 +123,7 @@ const Home = () => {
             </div>
           </div>
           <div className="relative">
-            <img src={warehouseImage} alt="BMART warehouse" className="rounded-2xl shadow-2xl w-full h-[420px] object-cover" />
+            <img src={warehouseImage} alt="B MART warehouse" className="rounded-2xl shadow-2xl w-full h-[420px] object-cover" />
             <div className="absolute -bottom-6 -left-6 bg-brand-gold text-[color:var(--bmart-ink)] rounded-xl p-6 shadow-xl hidden sm:block">
               <div className="text-3xl font-black">10+</div>
               <div className="font-semibold text-sm">Years of Trust</div>
@@ -86,7 +132,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* PRODUCTS */}
+      {/* CATEGORIES */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <SectionTitle eyebrow="What We Supply" title="Building Materials & Construction Products" center />
@@ -102,6 +148,66 @@ const Home = () => {
                   <span className="text-brand-gold text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">View <ArrowRight size={14} /></span>
                 </div>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHOLESALE & RETAIL SECTIONS */}
+      <section className="py-20 bg-white border-t border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-6">
+          <SectionTitle eyebrow="Procurement Options" title="Wholesale & Retail Building Materials Supplier" center />
+          <div className="grid md:grid-cols-3 gap-8 mt-12">
+            <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+              <div className="w-12 h-12 rounded-lg bg-brand-gold text-[color:var(--bmart-ink)] flex items-center justify-center font-black text-xl mb-6">R</div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Retail Supply</h3>
+              <p className="text-gray-600 mb-6 text-sm leading-relaxed">Tailored procurement services and personalized assistance for individual house construction customers looking for dependable quality.</p>
+              <ul className="space-y-2 text-sm text-gray-700 font-medium">
+                <li className="flex items-center gap-2"><CheckCircle2 size={16} className="brand-gold" /> Individual house construction</li>
+                <li className="flex items-center gap-2"><CheckCircle2 size={16} className="brand-gold" /> Transparent pricing & billing</li>
+              </ul>
+            </div>
+            <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+              <div className="w-12 h-12 rounded-lg bg-brand-gold text-[color:var(--bmart-ink)] flex items-center justify-center font-black text-xl mb-6">W</div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Wholesale Supply</h3>
+              <p className="text-gray-600 mb-6 text-sm leading-relaxed">Specialized contractor pricing, dealer packages, and priority fulfillment channels for volume builders and trade professionals.</p>
+              <ul className="space-y-2 text-sm text-gray-700 font-medium">
+                <li className="flex items-center gap-2"><CheckCircle2 size={16} className="brand-gold" /> Contractors, Builders & Dealers</li>
+                <li className="flex items-center gap-2"><CheckCircle2 size={16} className="brand-gold" /> Dedicated project billing</li>
+              </ul>
+            </div>
+            <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+              <div className="w-12 h-12 rounded-lg bg-brand-gold text-[color:var(--bmart-ink)] flex items-center justify-center font-black text-xl mb-6">B</div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Bulk Project Supply</h3>
+              <p className="text-gray-600 mb-6 text-sm leading-relaxed">End-to-end material scheduling and logistical support engineered for large scale developments and industrial sites.</p>
+              <ul className="space-y-2 text-sm text-gray-700 font-medium">
+                <li className="flex items-center gap-2"><CheckCircle2 size={16} className="brand-gold" /> Apartment / Commercial Projects</li>
+                <li className="flex items-center gap-2"><CheckCircle2 size={16} className="brand-gold" /> Industrial structure supply</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* TARGET AUDIENCE SECTION */}
+      <section className="py-16 bg-gray-900 text-white">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <SectionTitle eyebrow="Who We Serve" title="Our Valued Target Audience" center light />
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
+            {[
+              'Individual House Owners',
+              'Civil Contractors',
+              'Builders & Developers',
+              'Architects',
+              'Civil Engineers',
+              'Interior Designers',
+              'Small Construction Companies',
+              'Dealers & Resellers'
+            ].map((audience, idx) => (
+              <div key={idx} className="bg-white/5 border border-white/10 rounded-xl p-5 text-center flex items-center justify-center gap-2 font-semibold">
+                <Users size={18} className="brand-gold shrink-0" />
+                <span>{audience}</span>
+              </div>
             ))}
           </div>
         </div>
@@ -184,7 +290,7 @@ const Home = () => {
             <MapPin size={40} className="text-[color:var(--bmart-ink)]" />
             <div>
               <h3 className="text-2xl md:text-3xl font-black text-[color:var(--bmart-ink)]">One-Stop Shop for All Building Materials</h3>
-              <p className="text-[color:var(--bmart-ink)]/80 font-medium">Serving Trichy, Perambalur, Madurai & all of Tamil Nadu.</p>
+              <p className="text-[color:var(--bmart-ink)]/80 font-medium">Serving Tamil nadu(Trichy), Hyderabad, kerala & all of Sounth india.</p>
             </div>
           </div>
           <Link to="/branches" className="bg-brand-charcoal text-white font-bold px-8 py-4 rounded-md hover:bg-black transition-colors whitespace-nowrap">Visit Our Branches</Link>

@@ -7,7 +7,7 @@ export const company = {
   email: 'bmartbuild4@gmail.com',
   phone: '+91 78128 26567',
   whatsapp: '917812826567',
-  hq: 'Tiruchirappalli (Trichy), Tamil Nadu',
+  hq: 'Hyderabad',
   since: 2015,
   logo: '/bmart-logo.png',
   social: {
@@ -27,21 +27,36 @@ export const stats = [
 export const heroImage = 'https://images.unsplash.com/photo-1533378890784-b2a5b0a59d40';
 export const heroVideo = '/construction-hero.mp4';
 export const heroPoster = 'https://images.unsplash.com/photo-1533378890784-b2a5b0a59d40';
-export const warehouseImage = 'https://images.pexels.com/photos/10261153/pexels-photo-10261153.jpeg';
+export const warehouseImage = 'https://images.pexels.com/photos/29817952/pexels-photo-29817952.jpeg';
+export const warehouseImage1 = 'https://images.pexels.com/photos/10932215/pexels-photo-10932215.jpeg';
+export const warehouseImage2 = 'https://images.pexels.com/photos/14484384/pexels-photo-14484384.jpeg';
+export const warehouseImage3 = 'https://images.pexels.com/photos/2203683/pexels-photo-2203683.jpeg';
+export const warehouseImage4 = 'https://images.pexels.com/photos/5799727/pexels-photo-5799727.jpeg';
+export const warehouseImage5 = 'https://images.pexels.com/photos/14408706/pexels-photo-14408706.jpeg';
+export const warehouseImage6 = 'https://images.pexels.com/photos/7587476/pexels-photo-7587476.jpeg';
+export const warehouseImage7 = 'https://images.pexels.com/photos/6316056/pexels-photo-6316056.jpeg';
+export const warehouseImage8 = 'https://images.pexels.com/photos/29301874/pexels-photo-29301874.jpeg';
+export const warehouseImage9 = 'https://images.pexels.com/photos/28286038/pexels-photo-28286038.jpeg';
+export const warehouseImage10 = 'https://images.pexels.com/photos/9222200/pexels-photo-9222200.jpeg';
+export const warehouseImage11 = 'https://images.pexels.com/photos/26795776/pexels-photo-26795776.jpeg';
+export const warehouseImage12 = 'https://images.pexels.com/photos/29817952/pexels-photo-29817952.jpeg';
+export const warehouseImage13 = 'https://images.pexels.com/photos/38575493/pexels-photo-38575493.jpeg';
+export const warehouseImage14 = 'https://images.pexels.com/photos/48784/roof-plate-tiles-brick-black-48784.jpeg';
+export const warehouseImage15 = 'https://images.pexels.com/photos/6394609/pexels-photo-6394609.jpeg';
 export const qualityImage = 'https://images.unsplash.com/photo-1599707254554-027aeb4deacd';
 export const workerImage = 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f';
 
 export const categories = [
-  { id: 'electrical', name: 'Electrical', img: 'https://images.unsplash.com/photo-1544724569-5f546fd6f2b5', desc: 'Wiring, switches, cables, MCBs and lighting from trusted brands.' },
-  { id: 'tiles', name: 'Tiles & Ceramics', img: 'https://images.unsplash.com/photo-1580398562556-d33329a0f29b', desc: 'Floor and wall tiles, vitrified and ceramic ranges.' },
+  { id: 'electrical', name: 'Electrical', img: 'https://images.pexels.com/photos/17072947/pexels-photo-17072947.jpeg', desc: 'Wiring, switches, cables, MCBs and lighting from trusted brands.' },
+  { id: 'tiles', name: 'Tiles & Ceramics', img: 'https://images.pexels.com/photos/11806486/pexels-photo-11806486.jpeg', desc: 'Floor and wall tiles, vitrified and ceramic ranges.' },
   { id: 'sanitary', name: 'Sanitary Wares', img: 'https://images.unsplash.com/photo-1695002817411-203c7f19dfa3', desc: 'Wash basins, closets, faucets and complete bathroom sets.' },
   { id: 'blocks', name: 'Blocks', img: 'https://images.unsplash.com/photo-1657007508392-d68322544f70', desc: 'Solid, hollow and AAC blocks for every structure.' },
-  { id: 'cement', name: 'Cement Products', img: 'https://images.unsplash.com/photo-1637039968352-3bcbb9af5173', desc: 'OPC, PPC cement, ready-mix and admixtures.' },
-  { id: 'plumbing', name: 'Plumbing & Pipes', img: 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39', desc: 'PVC, UPVC, CPVC and HDPE pipes and fittings.' },
-  { id: 'plywood', name: 'Plywood & Timber', img: 'https://images.unsplash.com/photo-1611600700192-d87eaeed4f81', desc: 'Commercial and marine plywood, boards and timber.' },
-  { id: 'hardware', name: 'Hardware', img: 'https://images.pexels.com/photos/10284048/pexels-photo-10284048.jpeg', desc: 'Locks, hinges, fasteners and general hardware.' },
+  { id: 'cement', name: 'Cement Products', img: 'https://images.pexels.com/photos/29817952/pexels-photo-29817952.jpeg', desc: 'OPC, PPC cement, ready-mix and admixtures.' },
+  { id: 'plumbing', name: 'Plumbing & Pipes', img: 'https://images.pexels.com/photos/29301874/pexels-photo-29301874.jpeg', desc: 'PVC, UPVC, CPVC and HDPE pipes and fittings.' },
+  { id: 'plywood', name: 'Plywood & Timber', img: 'https://images.pexels.com/photos/16496900/pexels-photo-16496900.jpeg', desc: 'Commercial and marine plywood, boards and timber.' },
+  { id: 'hardware', name: 'Hardware', img: 'https://images.pexels.com/photos/93396/pexels-photo-93396.jpeg', desc: 'Locks, hinges, fasteners and general hardware.' },
   { id: 'handtools', name: 'Hand Tools', img: 'https://images.unsplash.com/photo-1426927308491-6380b6a9936f', desc: 'Hammers, wrenches, trowels and measuring tools.' },
-  { id: 'powertools', name: 'Power Tools', img: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f', desc: 'Drills, grinders, cutters and accessories.' },
+  { id: 'powertools', name: 'Power Tools', img: 'https://images.pexels.com/photos/9607203/pexels-photo-9607203.jpeg', desc: 'Drills, grinders, cutters and accessories.' },
   { id: 'paints', name: 'Paints & Finishes', img: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8', desc: 'Interior, exterior, primers and waterproofing.' },
   { id: 'safety', name: 'Safety Equipment', img: 'https://images.unsplash.com/photo-1662309376159-b95fb193d96b', desc: 'Helmets, gloves, boots and site safety gear.' },
 ];
@@ -54,12 +69,12 @@ export const bestPractices = [
 ];
 
 export const branches = [
-  { id: 1, city: 'Tiruchirappalli (Trichy)', tag: 'Head Office', address: 'Main Road, Trichy, Tamil Nadu 620001', phone: '+91 78128 26567' },
-  { id: 2, city: 'Perambalur', tag: 'Branch', address: 'Bypass Road, Perambalur, Tamil Nadu 621212', phone: '+91 78128 26567' },
-  { id: 3, city: 'Madurai', tag: 'Branch', address: 'Ring Road, Madurai, Tamil Nadu 625001', phone: '+91 78128 26567' },
-  { id: 4, city: 'Thanjavur', tag: 'Branch', address: 'Trichy Road, Thanjavur, Tamil Nadu 613001', phone: '+91 78128 26567' },
-  { id: 5, city: 'Karur', tag: 'Branch', address: 'Kovai Road, Karur, Tamil Nadu 639001', phone: '+91 78128 26567' },
-  { id: 6, city: 'Dindigul', tag: 'Branch', address: 'Madurai Road, Dindigul, Tamil Nadu 624001', phone: '+91 78128 26567' },
+  { id: 1, city: 'Hyderabad', tag: 'Head Office',  phone: '+91 78128 26567' },
+  { id: 2, city: 'Tamil Nadu(trichy)',  phone: '+91 78128 26567' },
+  { id: 3, city: 'Karnataka',  phone: '+91 78128 26567' },
+  { id: 4, city: 'Kerala',phone: '+91 78128 26567' },
+  { id: 5, city: 'Pondichery', phone: '+91 78128 26567' },
+ 
 ];
 
 export const reviews = [
