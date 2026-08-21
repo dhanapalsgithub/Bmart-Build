@@ -1,0 +1,20 @@
+{
+  "short_name": "BMART",
+  "name": "BMART Construction Material Supplier",
+  "icons": [
+    {
+      "src": "%PUBLIC_URL%/bmart-logo1.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "%PUBLIC_URL%/bmart-logo1.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "display": "standalone"
+}

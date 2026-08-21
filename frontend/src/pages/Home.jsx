@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Star, CheckCircle2, Truck, ShieldCheck, Clock, Sparkles, ChevronDown, MapPin, Target, Compass, Layers, Users } from 'lucide-react';
-import { stats, bestPractices, reviews, faqs, heroVideo, heroPoster, warehouseImage,warehouseImage1,warehouseImage2,warehouseImage3,warehouseImage4,warehouseImage5,warehouseImage6,warehouseImage7,warehouseImage8,warehouseImage9,warehouseImage10,warehouseImage11,warehouseImage12,warehouseImage13,warehouseImage14,warehouseImage15, qualityImage, company } from '../mock/mock';
+import { ArrowRight, Star, CheckCircle2, Truck, ShieldCheck, Clock, Sparkles, ChevronDown, MapPin, Target, Compass, Users } from 'lucide-react';
+import { stats, bestPractices, reviews, faqs, warehouseImage, warehouseImage1, warehouseImage2, warehouseImage3, warehouseImage4, warehouseImage5, warehouseImage6, warehouseImage7, warehouseImage8, warehouseImage9, warehouseImage10, warehouseImage11, warehouseImage12, warehouseImage13, warehouseImage14, warehouseImage15, qualityImage } from '../mock/mock';
 import QuoteForm from '../components/QuoteForm';
 
 const SectionTitle = ({ eyebrow, title, center, light }) => (
@@ -11,10 +12,37 @@ const SectionTitle = ({ eyebrow, title, center, light }) => (
   </div>
 );
 
+// Local public folder banner slider list (download1 to download8)
+const heroSlides = [
+  '/Slide/download1.png',
+  '/Slide/download2.png',
+  '/Slide/download3.png',
+  '/Slide/download4.svg',
+
+  '/Slide/download6.png',
+  '/Slide/download7.png',
+  '/Slide/download8.png',
+  '/Slide/download1.png',
+  '/Slide/download2.png',
+  '/Slide/download9.png',
+  '/Slide/download10.png',
+  '/Slide/download12.png',
+
+];
+
 const Home = () => {
   const [openFaq, setOpenFaq] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Updated Categories Data matching your requirement
+  // Auto-play interval (every 5 seconds)
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
+  // Categories Data
   const categories = [
     { id: 1, name: 'Cement', img: warehouseImage },
     { id: 2, name: 'TMT Steels', img: warehouseImage1 },
@@ -36,34 +64,53 @@ const Home = () => {
 
   return (
     <div>
-      {/* HERO */}
-      <section className="relative min-h-[88vh] flex items-center">
+      {/* GOBUILDMART STYLE HERO BANNER SLIDER */}
+      <section className="relative min-h-[45vh] md:min-h-[45vh] flex items-center overflow-hidden bg-gray-900 group">
         <div className="absolute inset-0">
-          <video
-            className="w-full h-full object-cover"
-            src={heroVideo}
-            poster={heroPoster}
-            autoPlay
-            muted
-            loop
-            playsInline
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[rgba(20,20,22,0.92)] via-[rgba(20,20,22,0.75)] to-[rgba(20,20,22,0.35)]" />
+          <AnimatePresence mode="wait">
+            <motion.img
+              key={currentSlide}
+              src={heroSlides[currentSlide]}
+              initial={{ opacity: 0, scale: 1.05 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.98 }}
+              transition={{ duration: 0.8, ease: "easeInOut" }}
+              className="absolute inset-0 w-full h-full object-cover brightness-125 contrast-155"
+              alt={`Construction Material Banner ${currentSlide + 1}`}
+            />
+          </AnimatePresence>
+          <div className="absolute inset-0 bg-gradient-to-r from-[rgba(20,20,22,0.85)] via-[rgba(20,20,22,0.5)] to-transparent" />
         </div>
-        <div className="relative max-w-7xl mx-auto px-6 py-24 w-full">
-          <div className="max-w-2xl animate-fadeup">
-            <span className="inline-flex items-center gap-2 bg-brand-gold text-[color:var(--bmart-ink)] font-bold text-sm px-4 py-1.5 rounded-full mb-6"><Sparkles size={15} /> Build Better. Build with Trust.</span>
-            <h1 className="text-4xl md:text-6xl font-black text-white leading-[1.05] mb-6">
+
+        {/* Content Box */}
+        <div className="relative max-w-7xl mx-auto px-6 py-12 md:py-16 w-full z-10">
+          <div className="max-w-2xl">
+            <span className="inline-flex items-center gap-2 bg-brand-gold text-[color:var(--bmart-ink)] font-bold text-sm px-4 py-1.5 rounded-full mb-4 shadow-md">
+              <Sparkles size={15} /> Build Better. Build with Trust.
+            </span>
+            <h1 className="text-3xl md:text-5xl font-black text-white leading-[1.05] mb-4">
               The Best Building Materials Supplier in <span className="brand-gold">South India</span>
             </h1>
-            <p className="text-lg text-gray-200 mb-8 leading-relaxed">
-             BMART supplies Individual House Owners, Civil Contractors, Builders & Developers, Architects, Civil Engineers, Interior Designers, Small Construction Companies, Apartment / Commercial Projects, Dealers & Resellers across south india  — with 15,000+ products and fast, reliable delivery.
+            <p className="text-base md:text-lg text-gray-100 mb-6 leading-relaxed">
+              BMART supplies Civil Contractors, Builders, Architects, and Engineers with 15,000+ products, transparent pricing, and fast, reliable site delivery.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="#quote" className="bg-brand-gold text-[color:var(--bmart-ink)] font-bold px-8 py-4 rounded-md hover:bg-[color:var(--bmart-gold-dark)] transition-colors flex items-center gap-2">Request a Quote <ArrowRight size={18} /></a>
-              <Link to="/products" className="bg-white/10 backdrop-blur border border-white/30 text-white font-bold px-8 py-4 rounded-md hover:bg-white/20 transition-colors">Explore Products</Link>
+              <a href="#quote" className="bg-brand-gold text-[color:var(--bmart-ink)] font-bold px-7 py-3.5 rounded-md hover:bg-[color:var(--bmart-gold-dark)] transition-colors flex items-center gap-2 shadow-lg">Request a Quote <ArrowRight size={18} /></a>
+              <Link to="/products" className="bg-white/15 backdrop-blur border border-white/40 text-white font-bold px-7 py-3.5 rounded-md hover:bg-white/30 transition-colors">Explore Products</Link>
             </div>
           </div>
+        </div>
+
+        {/* Slide Indicator Dots */}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2.5 z-25">
+          {heroSlides.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => setCurrentSlide(idx)}
+              className={`h-2.5 rounded-full transition-all ${currentSlide === idx ? 'w-8 bg-brand-gold' : 'w-2.5 bg-white/50 hover:bg-white'}`}
+              aria-label={`Go to slide ${idx + 1}`}
+            />
+          ))}
         </div>
       </section>
 
@@ -111,19 +158,21 @@ const Home = () => {
           <div>
             <SectionTitle eyebrow="About B Mart" title="A Trusted Partner in Building Better Spaces" />
             <p className="text-gray-600 leading-relaxed mb-4">
-              At B MART, we believe that every strong structure begins with the right materials, the right quality and the right partner. We bring together a comprehensive range of quality building and construction materials under one trusted brand, making construction procurement simpler, smarter and more reliable.
+              At B MART, we believe that every strong structure begins with the right materials, the right quality and the right partner. We bring together a comprehensive range of quality building and construction materials under one trusted brand.
             </p>
             <p className="text-gray-600 leading-relaxed mb-6">
-              From individual home builders to contractors, architects, builders and large-scale projects, we are committed to delivering genuine products, competitive pricing, dependable supply and professional service at every stage of construction. Our core values stand strong on <strong className="text-gray-900">QUALITY • TRUST • VALUE • SERVICE</strong>.
+              From individual home builders to contractors, architects, builders and large-scale projects, we are committed to delivering genuine products, competitive pricing, dependable supply and professional service.
             </p>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="flex flex-col gap-3">
               {bestPractices.map((b) => (
-                <div key={b} className="flex items-center gap-2 text-gray-800 font-medium"><CheckCircle2 size={18} className="brand-gold shrink-0" /> {b}</div>
+                <div key={b} className="flex items-center gap-2 text-gray-800 font-medium">
+                  <CheckCircle2 size={18} className="brand-gold shrink-0" /> {b}
+                </div>
               ))}
             </div>
           </div>
           <div className="relative">
-            <img src={warehouseImage} alt="B MART warehouse" className="rounded-2xl shadow-2xl w-full h-[420px] object-cover" />
+            <img src={warehouseImage} alt="B MART warehouse" className="rounded-2xl shadow-2xl w-full h-[620px] object-cover" />
             <div className="absolute -bottom-6 -left-6 bg-brand-gold text-[color:var(--bmart-ink)] rounded-xl p-6 shadow-xl hidden sm:block">
               <div className="text-3xl font-black">10+</div>
               <div className="font-semibold text-sm">Years of Trust</div>
@@ -138,13 +187,13 @@ const Home = () => {
           <SectionTitle eyebrow="What We Supply" title="Building Materials & Construction Products" center />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
             {categories.map((c) => (
-              <Link to="/products" key={c.id} className="group relative rounded-xl overflow-hidden card-hover bg-white">
+              <Link to="/products" key={c.id} className="group relative rounded-xl overflow-hidden card-hover bg-white shadow-sm">
                 <div className="aspect-square overflow-hidden">
                   <img src={c.img} alt={c.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-[rgba(20,20,22,0.85)] to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[rgba(233, 233, 238, 0.85)] to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <h3 className="text-white font-bold text-lg">{c.name}</h3>
+                  {/* <h3 className="text-white font-bold text-lg">{c.name}</h3> */}
                   <span className="text-brand-gold text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">View <ArrowRight size={14} /></span>
                 </div>
               </Link>
@@ -236,14 +285,14 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-6">
           <SectionTitle eyebrow="Testimonials" title="What Our Customers Say" center />
           <div className="flex items-center justify-center gap-2 -mt-6 mb-10">
-            {[1,2,3,4,5].map((i) => <Star key={i} size={20} className={i <= 4 ? 'fill-[color:var(--bmart-gold)] text-[color:var(--bmart-gold)]' : 'text-[color:var(--bmart-gold)]'} />)}
+            {[1, 2, 3, 4, 5].map((i) => <Star key={i} size={20} className={i <= 4 ? 'fill-[color:var(--bmart-gold)] text-[color:var(--bmart-gold)]' : 'text-[color:var(--bmart-gold)]'} />)}
             <span className="font-bold text-gray-800 ml-2">4.3/5</span>
             <span className="text-gray-500">from 147+ reviews</span>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {reviews.map((r) => (
               <div key={r.name} className="bg-gray-50 rounded-2xl p-7 card-hover border border-gray-100">
-                <div className="flex gap-1 mb-4">{[1,2,3,4,5].map((i) => <Star key={i} size={16} className="fill-[color:var(--bmart-gold)] text-[color:var(--bmart-gold)]" />)}</div>
+                <div className="flex gap-1 mb-4">{[1, 2, 3, 4, 5].map((i) => <Star key={i} size={16} className="fill-[color:var(--bmart-gold)] text-[color:var(--bmart-gold)]" />)}</div>
                 <p className="text-gray-600 leading-relaxed mb-6">“{r.text}”</p>
                 <div className="flex items-center gap-3">
                   <div className="w-11 h-11 rounded-full bg-brand-gold flex items-center justify-center font-black text-[color:var(--bmart-ink)]">{r.name.charAt(0)}</div>
@@ -263,7 +312,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <SectionTitle eyebrow="Request a Quote" title="Ready to Build? Let's Work Together" />
-            <p className="text-gray-600 mb-8">Send us your requirement and our team will get back with competitive pricing and availability. For faster response, reach us on WhatsApp.</p>
+            <p className="text-gray-600 mb-8">Send us your requirement and our team will get back with competitive pricing and availability.</p>
             <div className="space-y-4">
               {faqs.map((f, i) => (
                 <div key={i} className="bg-white rounded-xl border border-gray-100 overflow-hidden">
@@ -290,7 +339,7 @@ const Home = () => {
             <MapPin size={40} className="text-[color:var(--bmart-ink)]" />
             <div>
               <h3 className="text-2xl md:text-3xl font-black text-[color:var(--bmart-ink)]">One-Stop Shop for All Building Materials</h3>
-              <p className="text-[color:var(--bmart-ink)]/80 font-medium">Serving Tamil nadu(Trichy), Hyderabad, kerala & all of Sounth india.</p>
+              <p className="text-[color:var(--bmart-ink)]/80 font-medium">Serving Tamil Nadu, Hyderabad, Kerala & all of South India.</p>
             </div>
           </div>
           <Link to="/branches" className="bg-brand-charcoal text-white font-bold px-8 py-4 rounded-md hover:bg-black transition-colors whitespace-nowrap">Visit Our Branches</Link>
