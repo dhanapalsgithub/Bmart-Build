@@ -5,8 +5,8 @@ export const company = {
   tagline: 'Construction Material Supplier',
   legalName: 'BMART Construction Material Supplier',
   email: 'sales@bmartsupply.com / info@bmartsupply.com',
-  phone: '+91 78128 26567 / +917812806567',
-  whatsapp: '917812826567',
+  phone: '7397036632, 7904872045',
+  whatsapp: '7904872045',
   hq: 'Hyderabad',
   since: 2015,
   logo: '/bmart-logo.png',
@@ -73,11 +73,11 @@ export const bestPractices = [
 ];
 
 export const branches = [
-  { id: 1, city: 'Hyderabad', tag: 'Head Office',  phone: '+91 78128 26567, +91 7812806567' },
-  { id: 2, city: 'Tamil Nadu(trichy)',  phone: '+91 78128 26567 , +91 7812806567' },
-  { id: 3, city: 'Karnataka',  phone: '+91 78128 26567 , +91 7812806567' },
-  { id: 4, city: 'Kerala',phone: '+91 78128 26567 , +91 7812806567' },
-  { id: 5, city: 'Pondichery', phone: '+91 78128 26567 , +91 7812806567' },
+  { id: 1, city: 'Hyderabad', tag: 'Head Office',  phone: '7397036632, 7904872045' },
+  { id: 2, city: 'Tamil Nadu(trichy)',  phone: '7397036632, 7904872045' },
+  { id: 3, city: 'Karnataka',  phone: '7397036632, 7904872045' },
+  { id: 4, city: 'Kerala',phone: '7397036632, 7904872045' },
+  { id: 5, city: 'Pondichery', phone: '7397036632, 7904872045' },
 ];
 
 export const reviews = [

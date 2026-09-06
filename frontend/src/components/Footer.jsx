@@ -10,7 +10,17 @@ const Footer = () => {
         <div>
           <img src={company.logo} alt="BMART" className="h-16 w-auto object-contain bg-white rounded-lg p-2 mb-4" />
           <p className="text-sm leading-relaxed text-gray-400">
-            BMART is your one-stop construction material supplier serving Across South India, tamil nadu, hyderabad, kerala and all of South India with quality products and reliable delivery.
+            
+            No.145, Kumaran Nagar,
+
+Trichy panjapur Tanjore  Bye pass 
+
+Tiruchirappalli,
+
+Tamil Nadu - 620021 <br></br>
+BMART is your one-stop construction material supplier serving Across South India,
+
+
           </p>
           <div className="flex gap-3 mt-5">
             <a href={company.social.instagram} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-gold hover:text-[color:var(--bmart-ink)] transition-colors"><Instagram size={18} /></a>

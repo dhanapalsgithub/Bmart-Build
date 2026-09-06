@@ -7,7 +7,8 @@ import WhatsAppFloat from './components/WhatsAppFloat';
 import { Toaster } from './components/ui/toaster';
 import Home from './pages/Home';
 import Products from './pages/Products';
-import Branches from './pages/Branches';
+import Services from './pages/Services';
+import Projects from './pages/Projects';
 import About from './pages/About';
 import Contact from './pages/Contact';
 
@@ -27,7 +28,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
-            <Route path="/branches" element={<Branches />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
