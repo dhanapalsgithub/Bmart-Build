@@ -29,7 +29,7 @@ export const heroVideo = '/construction-hero.mp4';
 export const heroPoster = 'https://images.unsplash.com/photo-1533378890784-b2a5b0a59d40';
 
 // Updated Warehouse images
-export const warehouseImage = '/warehouse/cement1.jpg';
+export const warehouseImage = '/warehouse/ChatGPT Image Sep 11, 2026, 09_25_24 PM.png';
 export const warehouseImage1 = '/warehouse/steel.jpg';
 export const warehouseImage2 = '/Product/product3.png';
 export const warehouseImage3 = '/warehouse/strcutural steel.jpg';
@@ -46,23 +46,70 @@ export const warehouseImage13 = 'https://cdn.gobuildmart.com/products/images/86x
 export const warehouseImage14 = 'https://cdn.gobuildmart.com/child-categories/images/gravel_1784532862.jpg';
 export const warehouseImage15 = 'https://cdn.gobuildmart.com/products/images/RJnDjWi7Y0qs.jpg';
 
-
 export const qualityImage = 'https://images.unsplash.com/photo-1599707254554-027aeb4deacd';
 export const workerImage = 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f';
 
 export const categories = [
-  { id: 'electrical', name: 'Electrical', img: '/Product/product1.png', desc: 'Wiring, switches, cables, MCBs and lighting from trusted brands.' },
-  { id: 'tiles', name: 'Tiles & Ceramics', img: '/Product/product2.jpg', desc: 'Floor and wall tiles, vitrified and ceramic ranges.' },
-  { id: 'sanitary', name: 'Sanitary Wares', img: '/Product/product3.png', desc: 'Wash basins, closets, faucets and complete bathroom sets.' },
-  { id: 'blocks', name: 'Blocks', img: '/Product/product4.jpg', desc: 'Solid, hollow and AAC blocks for every structure.' },
-  { id: 'cement', name: 'Cement Products', img: '/Product/product5.png', desc: 'OPC, PPC cement, ready-mix and admixtures.' },
-  { id: 'plumbing', name: 'Plumbing & Pipes', img: '/Product/product6.png', desc: 'PVC, UPVC, CPVC and HDPE pipes and fittings.' },
-  { id: 'plywood', name: 'Plywood & Timber', img: '/Product/product7.jpg', desc: 'Commercial and marine plywood, boards and timber.' },
-  { id: 'hardware', name: 'Hardware', img: '/Product/product8.jpg', desc: 'Locks, hinges, fasteners and general hardware.' },
-  { id: 'handtools', name: 'Hand Tools', img: '/Product/product9.png', desc: 'Hammers, wrenches, trowels and measuring tools.' },
-  { id: 'powertools', name: 'Power Tools', img: '/Product/product10.jpg', desc: 'Drills, grinders, cutters and accessories.' },
-  { id: 'paints', name: 'Paints & Finishes', img: '/Product/product11.jpg', desc: 'Interior, exterior, primers and waterproofing.' },
-  { id: 'safety', name: 'Safety Equipment', img: '/Product/product12.jpg', desc: 'Helmets, gloves, boots and site safety gear.' },
+  { 
+    id: 'cement', 
+    name: 'Cement', 
+    img: '/warehouse/cement.jpg', 
+    desc: 'High-grade structural cement for strong foundations, masonry, and concrete casting.' 
+  },
+  { 
+    id: 'steel', 
+    name: 'Steel', 
+    img: '/warehouse/steel.jpg', 
+    desc: 'TMT steel bars and structural steel rods ensuring maximum tensile strength for construction.' 
+  },
+  { 
+    id: 'flyash-blocks', 
+    name: 'Flyash Bricks / Solid Block', 
+    img: '/Product/product4.jpg', 
+    desc: 'Eco-friendly, durable flyash bricks and heavy-duty solid blocks for robust wall construction.' 
+  },
+  { 
+    id: 'aac-blocks', 
+    name: 'AAC Block', 
+    img: 'https://cdn.gobuildmart.com/products/images/lMvwS7IctSbY.jpg', 
+    desc: 'Lightweight, thermal-insulating Autoclaved Aerated Concrete blocks for fast and efficient building.' 
+  },
+  { 
+    id: 'adhesive-paste', 
+    name: 'Adhesive Paste', 
+    img: 'warehouse/M3W9yvExzNGA.jpg', 
+    desc: 'Specialized high-bond tile adhesives and joint pastes for seamless laying and superior grip.' 
+  },
+  { 
+    id: 'consumables', 
+    name: 'Consumable Item', 
+    img: '/warehouse/package.jpg', 
+    desc: 'Essential site consumables including safety gear, tapes, fasteners, and utility tools.' 
+  },
+  { 
+    id: 'painting', 
+    name: 'Painting', 
+    img: '/Product/product11.jpg', 
+    desc: 'Premium exterior and interior wall paints, primers, putties, and waterproofing solutions.' 
+  },
+  { 
+    id: 'electrical', 
+    name: 'Electrical', 
+    img: '/warehouse/qpn3BhaOJb4W.jpg', 
+    desc: 'Wiring, conduits, switches, distribution boards, and fittings for safe setups.' 
+  },
+  { 
+    id: 'plumbing', 
+    name: 'Plumbing Material', 
+    img: '/Product/product6.png', 
+    desc: 'UPVC, CPVC pipes, fittings, valves, and water storage solutions for reliable systems.' 
+  },
+  { 
+    id: 'tiles', 
+    name: 'Tiles', 
+    img: '/warehouse/tiles_1784004260.jpg', 
+    desc: 'Aesthetically pleasing floor, wall, and vitrified tiles available in diverse textures.' 
+  },
 ];
 
 export const bestPractices = [
@@ -73,11 +120,11 @@ export const bestPractices = [
 ];
 
 export const branches = [
-  { id: 1, city: 'Hyderabad', tag: 'Head Office',  phone: '7397036632, 7904872045' },
-  { id: 2, city: 'Tamil Nadu(trichy)',  phone: '7397036632, 7904872045' },
-  { id: 3, city: 'Karnataka',  phone: '7397036632, 7904872045' },
-  { id: 4, city: 'Kerala',phone: '7397036632, 7904872045' },
-  { id: 5, city: 'Pondichery', phone: '7397036632, 7904872045' },
+  { id: 1, city: 'Hyderabad', tag: 'Head Office', phone: '7397036632, 7904872045' },
+  { id: 2, city: 'Tamil Nadu (Trichy)', phone: '7397036632, 7904872045' },
+  { id: 3, city: 'Karnataka', phone: '7397036632, 7904872045' },
+  { id: 4, city: 'Kerala', phone: '7397036632, 7904872045' },
+  { id: 5, city: 'Pondicherry', phone: '7397036632, 7904872045' },
 ];
 
 export const reviews = [
@@ -92,9 +139,17 @@ export const reviews = [
 export const faqs = [
   { q: 'Why is BMART a trusted building materials supplier in Tamil Nadu?', a: 'BMART supplies 15,000+ construction products, serves customers across Trichy, Perambalur, Madurai and all major districts of Tamil Nadu, and offers project and wholesale quotations with reliable delivery.' },
   { q: 'Which areas does BMART deliver to?', a: 'We deliver across Tamil Nadu with a special focus on Perambalur, Madurai and Tiruchirappalli (Trichy), along with Thanjavur, Karur, Dindigul and nearby districts.' },
-  { q: 'What building materials does BMART supply?', a: 'We supply cement products, blocks, tiles, ceramics, electrical supplies, plumbing materials, sanitary ware, bathroom and kitchen fittings, plywood, timber, hardware, hand tools, power tools, paints, waterproofing materials, and safety equipment.' },
+  { q: 'What building materials does BMART supply?', a: 'We supply cement, steel, flyash & solid blocks, AAC blocks, adhesive paste, consumables, painting materials, electrical, plumbing materials, and tiles.' },
   { q: 'Does BMART offer wholesale and project quotations?', a: 'Yes. Contractors, builders, developers and facility teams can request project quotations, wholesale pricing, bulk-order rates and coordinated delivery.' },
   { q: 'How can I request a quote?', a: 'Fill in the Request a Quote form on our website, WhatsApp us, or call directly. Our team will respond quickly with pricing and availability.' },
 ];
 
-export const productTypes = ['General Enquiry', 'Cement & Blocks', 'Tiles & Sanitary', 'Electrical', 'Plumbing', 'Plywood & Timber', 'Tools', 'Paints', 'Bulk / Project Order'];
+export const productTypes = [
+  'General Enquiry', 
+  'Cement & Steel', 
+  'Bricks & Blocks (Flyash/AAC)', 
+  'Adhesive & Consumables', 
+  'Tiles & Painting', 
+  'Electrical & Plumbing', 
+  'Bulk / Project Order'
+];

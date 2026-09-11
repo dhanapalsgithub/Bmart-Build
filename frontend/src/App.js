@@ -7,6 +7,7 @@ import WhatsAppFloat from './components/WhatsAppFloat';
 import { Toaster } from './components/ui/toaster';
 import Home from './pages/Home';
 import Products from './pages/Products';
+import CategoryDetail from './pages/CategoryDetail'; // அனைத்துப் பிரிவுகளுக்குமான பொதுவான சப்-கேட்டகிரி பக்கம்
 import Services from './pages/Services';
 import Projects from './pages/Projects';
 import About from './pages/About';
@@ -28,6 +29,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/products/:categoryId" element={<CategoryDetail />} /> {/* டைனமிக் ரூட் - அனைத்துப் பிரிவுகளுக்கும் பொருந்தும் */}
             <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/about" element={<About />} />

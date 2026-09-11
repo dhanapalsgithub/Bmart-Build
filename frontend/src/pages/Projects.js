@@ -8,31 +8,31 @@ const Projects = () => {
       id: 'apartment-projects',
       title: 'Apartment projects',
       description: 'Planned material supply for residential apartment and multi-unit housing projects across structural and finishing stages.',
-      image: 'https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg',
+      image: 'https://images.pexels.com/photos/439416/pexels-photo-439416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     },
     {
       id: 'individual-houses',
       title: 'Individual houses',
       description: 'Quality building materials for individual house construction, renovations, and custom residential villa projects.',
-      image: 'https://images.pexels.com/photo-106399/pexels-photo-106399.jpeg',
+      image: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     },
     {
       id: 'commercial-buildings',
       title: 'Commercial buildings',
       description: 'Tailored supply approach for commercial buildings, offices, retail shops, warehouses, and institutional facilities.',
-      image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg',
+      image: 'https://images.pexels.com/photos/7706385/pexels-photo-7706385.jpeg',
     },
     {
       id: 'contractor-projects',
       title: 'Contractor projects',
       description: 'Dependable sourcing, competitive pricing, and smooth delivery coordination working directly with builders and developers.',
-      image: 'https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg',
+      image: 'https://images.pexels.com/photos/15063590/pexels-photo-15063590.jpeg',
     },
     {
       id: 'completed-ongoing-supply',
       title: 'Completed / ongoing supply photos',
       description: 'A comprehensive portfolio showcasing structured bulk procurement, ongoing site deliveries, and successfully finished projects.',
-      image: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg',
+      image: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     },
   ];
 
@@ -58,7 +58,7 @@ const Projects = () => {
                 key={p.id}
                 className="group rounded-2xl overflow-hidden border border-gray-100 bg-white shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
               >
-                <div className="relative h-56 overflow-hidden">
+                <div className="relative h-56 overflow-hidden bg-white">
                   <img 
                     src={p.image} 
                     alt={p.title}
