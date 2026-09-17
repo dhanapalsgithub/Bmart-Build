@@ -92,6 +92,14 @@ const subCategoriesData = {
     }
   ],
   steel: [
+
+    { 
+      id: 'tmt-bars', 
+      name: 'TMT Bars', 
+      desc: 'High tensile strength TMT bars for earthquake-resistant concrete reinforcement.', 
+      img: '/warehouse/tmt-bars_1783947662.jpg', 
+      count: '58 products' 
+    },
     { 
       id: 'angle', 
       name: 'Angle', 
@@ -120,6 +128,7 @@ const subCategoriesData = {
       img: '/warehouse/roofing-sheets-plates_1783947715.jpg', 
       count: '0 products' 
     },
+    
     { 
       id: 'stainless-steel', 
       name: 'Stainless Steel', 
@@ -134,13 +143,7 @@ const subCategoriesData = {
       img: '/warehouse/steel-pipes-tubes_1783947691.jpg', 
       count: '0 products' 
     },
-    { 
-      id: 'tmt-bars', 
-      name: 'TMT Bars', 
-      desc: 'High tensile strength TMT bars for earthquake-resistant concrete reinforcement.', 
-      img: '/warehouse/tmt-bars_1783947662.jpg', 
-      count: '58 products' 
-    },
+    
     { 
       id: 'structural-steel', 
       name: 'Structural Steel', 

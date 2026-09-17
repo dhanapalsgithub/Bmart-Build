@@ -8,7 +8,7 @@ const Projects = () => {
       id: 'apartment-projects',
       title: 'Apartment projects',
       description: 'Planned material supply for residential apartment and multi-unit housing projects across structural and finishing stages.',
-      image: 'https://images.pexels.com/photos/439416/pexels-photo-439416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.unsplash.com/photo-1515829231605-2d8e4455af56?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXBhcnRtZW50JTIwYnVpbGRpbmclMjB3aXRob3V0JTIwYmFja2dyb3VuZCUyMHdoaXRlfGVufDB8fDB8fHww',
     },
     {
       id: 'individual-houses',
@@ -20,19 +20,19 @@ const Projects = () => {
       id: 'commercial-buildings',
       title: 'Commercial buildings',
       description: 'Tailored supply approach for commercial buildings, offices, retail shops, warehouses, and institutional facilities.',
-      image: 'https://images.pexels.com/photos/7706385/pexels-photo-7706385.jpeg',
+      image: 'https://media.istockphoto.com/id/1958541858/photo/office-building-dusk.webp?a=1&b=1&s=612x612&w=0&k=20&c=S7da8VhW2N0wh7qZphUDn3RVUixDByfnGOuhEbSagjk=',
     },
     {
       id: 'contractor-projects',
       title: 'Contractor projects',
       description: 'Dependable sourcing, competitive pricing, and smooth delivery coordination working directly with builders and developers.',
-      image: 'https://images.pexels.com/photos/15063590/pexels-photo-15063590.jpeg',
+      image: 'https://media.istockphoto.com/id/1164943425/photo/turning-dreams-into-winning-designs.webp?a=1&b=1&s=612x612&w=0&k=20&c=3Sij8KM4BiVK4_YsgcbAbxXdI6qKXE7FmFChuBnu28M=',
     },
     {
       id: 'completed-ongoing-supply',
       title: 'Completed / ongoing supply photos',
       description: 'A comprehensive portfolio showcasing structured bulk procurement, ongoing site deliveries, and successfully finished projects.',
-      image: 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://images.unsplash.com/photo-1664183338647-2b98504afc83?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Q29tcGxldGVkJTIwJTJGJTIwb25nb2luZyUyMHN1cHBseSUyMHBob3Rvc3xlbnwwfHwwfHx8MA%3D%3D',
     },
   ];
 
@@ -72,12 +72,12 @@ const Projects = () => {
                 <div className="p-6 flex flex-col flex-grow justify-between">
                   <p className="text-gray-600 text-sm leading-relaxed mb-6">{p.description}</p>
                   <a 
-                    href="https://wa.me/919360380276?text=Hi%20Bhart,%20I%20would%20like%20to%20discuss%20a%20project%20similar%20to%20your%20portfolio."
+                    href="https://wa.me/7904872045?text=Hi%20Bhart,%20I%20would%20like%20to%20discuss%20a%20project%20similar%20to%20your%20portfolio."
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center gap-2 text-sm font-bold text-gray-900 group-hover:text-[#FF7A00] transition-colors"
                   >
-                    View Project Details <ArrowRight size={16} />
+                    Ask Project Details <ArrowRight size={16} />
                   </a>
                 </div>
               </div>

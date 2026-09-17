@@ -19,6 +19,7 @@ Tiruchirappalli,
 
 Tamil Nadu - 620021 <br></br>
 BMART is your one-stop construction material supplier serving Across South India,
+Branches - Tamil nadu, kerala, Karnataka,Telangana,Hyderabad
 
 
           </p>
@@ -52,7 +53,7 @@ BMART is your one-stop construction material supplier serving Across South India
         <div>
           <h4 className="text-white font-bold text-lg mb-5">Get in Touch</h4>
           <ul className="space-y-4 text-sm">
-            <li className="flex items-start gap-3"><MapPin size={18} className="text-brand-gold mt-0.5 shrink-0" /> <span>{company.hq}</span></li>
+           
             <li className="flex items-center gap-3"><Phone size={18} className="text-brand-gold shrink-0" /> <a href={`tel:${company.phone.replace(/\s/g,'')}`} className="hover:text-brand-gold">{company.phone}</a></li>
             <li className="flex items-center gap-3"><Mail size={18} className="text-brand-gold shrink-0" /> <a href={`mailto:${company.email}`} className="hover:text-brand-gold break-all">{company.email}</a></li>
           </ul>
