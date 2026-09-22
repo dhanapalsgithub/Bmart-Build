@@ -1,5 +1,31 @@
 {
+  "name": "bmart-build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
   "dependencies": {
     "framer-motion": "^13.1.1"
-  }
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  },
+  "scripts": {
+    "start:backend": "cd backend && .\\venv\\Scripts\\python.exe server.py",
+    "start:frontend": "cd frontend && npm start",
+    "dev": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhanapalsgithub/Bmart-Build.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhanapalsgithub/Bmart-Build/issues"
+  },
+  "homepage": "https://github.com/dhanapalsgithub/Bmart-Build#readme"
 }

@@ -12,9 +12,8 @@ const SectionTitle = ({ eyebrow, title, center, light }) => (
   </div>
 );
 
-// Local public folder banner slider list (download1 to download8)
+// Local public folder banner slider list
 const heroSlides = [
-  
   '/Slide/download4.svg',
   '/Slide/download6.png',
   '/Slide/download24.png',
@@ -44,6 +43,11 @@ const Home = () => {
     return () => clearInterval(timer);
   }, []);
 
+  // Function to handle clicking on the slide banner to move to next slide
+  const handleNextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+  };
+
   // Categories Data
   const categories = [
     { id: 1, name: 'Cement', img: warehouseImage },
@@ -67,7 +71,11 @@ const Home = () => {
   return (
     <div>
       {/* GOBUILDMART STYLE HERO BANNER SLIDER */}
-      <section className="relative min-h-[45vh] md:min-h-[45vh] flex items-center overflow-hidden bg-gray-900 group">
+      <section 
+        className="relative min-h-[45vh] md:min-h-[45vh] flex items-center overflow-hidden bg-gray-900 group cursor-pointer"
+        onClick={handleNextSlide}
+        title="Click to view next slide"
+      >
         <div className="absolute inset-0">
           <AnimatePresence mode="wait">
             <motion.img
@@ -85,7 +93,7 @@ const Home = () => {
         </div>
 
         {/* Content Box */}
-        <div className="relative max-w-7xl mx-auto px-6 py-12 md:py-16 w-full z-10">
+        <div className="relative max-w-7xl mx-auto px-6 py-12 md:py-16 w-full z-10" onClick={(e) => e.stopPropagation()}>
           <div className="max-w-2xl">
             <span className="inline-flex items-center gap-2 bg-brand-gold text-[color:var(--bmart-ink)] font-bold text-sm px-4 py-1.5 rounded-full mb-4 shadow-md">
               <Sparkles size={15} /> Build Better. Build with Trust.
@@ -103,8 +111,8 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Slide Indicator Dots */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2.5 z-25">
+        {/* Slide Indicator Dots (Clickable) */}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2.5 z-25" onClick={(e) => e.stopPropagation()}>
           {heroSlides.map((_, idx) => (
             <button
               key={idx}
@@ -195,7 +203,6 @@ const Home = () => {
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-[rgba(233, 233, 238, 0.85)] to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-4">
-                  {/* <h3 className="text-white font-bold text-lg">{c.name}</h3> */}
                   <span className="text-brand-gold text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">View <ArrowRight size={14} /></span>
                 </div>
               </Link>
