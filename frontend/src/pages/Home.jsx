@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Star, CheckCircle2, Truck, ShieldCheck, Clock, Sparkles, ChevronDown, MapPin, Target, Compass, Users } from 'lucide-react';
+import { ArrowRight, Star, CheckCircle2, Truck, ShieldCheck, Clock, Sparkles, ChevronDown, ChevronLeft, ChevronRight, MapPin, Target, Compass, Users } from 'lucide-react';
 import { stats, bestPractices, reviews, faqs, warehouseImage, warehouseImage1, warehouseImage2, warehouseImage3, warehouseImage4, warehouseImage5, warehouseImage6, warehouseImage7, warehouseImage8, warehouseImage9, warehouseImage10, warehouseImage11, warehouseImage12, warehouseImage13, warehouseImage14, warehouseImage15, qualityImage } from '../mock/mock';
 import QuoteForm from '../components/QuoteForm';
 
@@ -14,38 +14,47 @@ const SectionTitle = ({ eyebrow, title, center, light }) => (
 
 // Local public folder banner slider list
 const heroSlides = [
-  '/Slide/download4.svg',
-  '/Slide/download6.png',
-  '/Slide/download24.png',
-  '/Slide/download23.png',
-  '/Slide/download22.png',
+  '/Slide/download25.png',
+  '/Slide/download30.png',
+  '/Slide/download35.png',
+  '/Slide/download29.png',
+  '/Slide/download31.png',
   '/Slide/download18.png',
-  '/Slide/download20.png',
-  '/Slide/download2.png',
-  '/Slide/download8.png',
-  '/Slide/download21.png',
-  '/Slide/download12.png',
-  '/Slide/download1.png',
-  '/Slide/download2.png',
-  '/Slide/download3.png',
-  '/Slide/download4.svg',
+  '/Slide/download37.png',
+  '/Slide/download32.png',
+  '/Slide/download36.png',
+  '/Slide/download38.png',
+  '/Slide/download34.png',
+  '/Slide/download39.png',
+  '/Slide/download42.png',
+  '/Slide/download41.png',
+  '/Slide/download40.png',
 ];
 
 const Home = () => {
   const [openFaq, setOpenFaq] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
-  // Auto-play interval (every 5 seconds)
+  // Auto-play interval slider
   useEffect(() => {
+    if (isPaused) return;
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, [isPaused]);
 
-  // Function to handle clicking on the slide banner to move to next slide
-  const handleNextSlide = () => {
+  // Manual Next Slide via Arrow Button
+  const handleNextSlide = (e) => {
+    if (e) e.stopPropagation();
     setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+  };
+
+  // Manual Prev Slide via Arrow Button
+  const handlePrevSlide = (e) => {
+    if (e) e.stopPropagation();
+    setCurrentSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length);
   };
 
   // Categories Data
@@ -72,9 +81,9 @@ const Home = () => {
     <div>
       {/* GOBUILDMART STYLE HERO BANNER SLIDER */}
       <section 
-        className="relative min-h-[45vh] md:min-h-[45vh] flex items-center overflow-hidden bg-gray-900 group cursor-pointer"
-        onClick={handleNextSlide}
-        title="Click to view next slide"
+        className="relative min-h-[45vh] md:min-h-[45vh] flex items-center overflow-hidden bg-gray-900 group"
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
       >
         <div className="absolute inset-0">
           <AnimatePresence mode="wait">
@@ -91,6 +100,22 @@ const Home = () => {
           </AnimatePresence>
           <div className="absolute inset-0 bg-gradient-to-r from-[rgba(20,20,22,0.85)] via-[rgba(20,20,22,0.5)] to-transparent" />
         </div>
+
+        {/* Manual Left/Right Arrow Buttons */}
+        <button
+          onClick={handlePrevSlide}
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-black/40 hover:bg-black/70 text-white p-2.5 rounded-full backdrop-blur transition-all opacity-70 group-hover:opacity-100"
+          aria-label="Previous Slide"
+        >
+          <ChevronLeft size={24} />
+        </button>
+        <button
+          onClick={handleNextSlide}
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-black/40 hover:bg-black/70 text-white p-2.5 rounded-full backdrop-blur transition-all opacity-70 group-hover:opacity-100"
+          aria-label="Next Slide"
+        >
+          <ChevronRight size={24} />
+        </button>
 
         {/* Content Box */}
         <div className="relative max-w-7xl mx-auto px-6 py-12 md:py-16 w-full z-10" onClick={(e) => e.stopPropagation()}>
@@ -112,7 +137,7 @@ const Home = () => {
         </div>
 
         {/* Slide Indicator Dots (Clickable) */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2.5 z-25" onClick={(e) => e.stopPropagation()}>
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2.5 z-30" onClick={(e) => e.stopPropagation()}>
           {heroSlides.map((_, idx) => (
             <button
               key={idx}

@@ -53,31 +53,31 @@ export const categories = [
   { 
     id: 'cement', 
     name: 'Cement', 
-    img: '/warehouse/cement.jpg', 
+    img: '/warehouse/ramco-super-fast-cement-packaging-size-50-kg-500x500.webp', 
     desc: 'High-grade structural cement for strong foundations, masonry, and concrete casting.' 
   },
   { 
     id: 'steel', 
     name: 'Steel', 
-    img: '/warehouse/steel.jpg', 
+    img: '/warehouse/reinforcing-steel-bars-building-armature-white-background_104576-212.avif', 
     desc: 'TMT steel bars and structural steel rods ensuring maximum tensile strength for construction.' 
   },
   { 
     id: 'flyash-blocks', 
     name: 'Flyash Bricks / Solid Block', 
-    img: '/Product/product4.jpg', 
+    img: '/warehouse/1685542440img3 (1).png', 
     desc: 'Eco-friendly, durable flyash bricks and heavy-duty solid blocks for robust wall construction.' 
   },
   { 
     id: 'aac-blocks', 
     name: 'AAC Block', 
-    img: 'https://cdn.gobuildmart.com/products/images/lMvwS7IctSbY.jpg', 
+    img: 'https://www.masonmart.in/cdn/shop/files/b92a472f-ca7d-441f-8338-ba21e9e9ece5.png?v=1753966626', 
     desc: 'Lightweight, thermal-insulating Autoclaved Aerated Concrete blocks for fast and efficient building.' 
   },
   { 
     id: 'adhesive-paste', 
     name: 'Adhesive Paste', 
-    img: 'warehouse/M3W9yvExzNGA.jpg', 
+    img: 'warehouse/Ramco-Tile-Fix-Adhesive.jpg', 
     desc: 'Specialized high-bond tile adhesives and joint pastes for seamless laying and superior grip.' 
   },
   { 
@@ -89,25 +89,25 @@ export const categories = [
   { 
     id: 'painting', 
     name: 'Painting', 
-    img: '/Product/product11.jpg', 
+    img: '/warehouse/4-liter-asian-ace-exterior-emulsion-paint-for-residential-and-commercial-building-540.jpg', 
     desc: 'Premium exterior and interior wall paints, primers, putties, and waterproofing solutions.' 
   },
   { 
     id: 'electrical', 
     name: 'Electrical', 
-    img: '/warehouse/qpn3BhaOJb4W.jpg', 
+    img: '/warehouse/single-core-2-5mm-25-meter-jelectricals-original-imagp7km28gghtzy.webp', 
     desc: 'Wiring, conduits, switches, distribution boards, and fittings for safe setups.' 
   },
   { 
     id: 'plumbing', 
     name: 'Plumbing Material', 
-    img: '/Product/product6.png', 
+    img: '/warehouse/pvc-pipe-fitting-pvc-pipe-connections-on-white-background-free-photo.jpg', 
     desc: 'UPVC, CPVC pipes, fittings, valves, and water storage solutions for reliable systems.' 
   },
   { 
     id: 'tiles', 
     name: 'Tiles', 
-    img: '/warehouse/tiles_1784004260.jpg', 
+    img: '/warehouse/top-view-interior-luxury-sample-materials-including-black-gery-marble_949228-85961.avif', 
     desc: 'Aesthetically pleasing floor, wall, and vitrified tiles available in diverse textures.' 
   },
 ];

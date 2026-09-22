@@ -7,31 +7,31 @@ import { categories, company } from '../mock/mock';
 const subCategoriesData = {
   cement: [
     { 
-      id: 'acc-cement', 
-      name: 'ACC Cement (OPC & PPC)', 
-      desc: 'High-performance ACC OPC 43/53 and durable PPC cement for all structural needs.', 
-      img: '/warehouse/ACC_Cement_PPC.webp', 
+      id: 'Ramco Cement', 
+      name: 'Ramco Cement ', 
+      desc: 'High-performance  cement for all structural needs.', 
+      img: '/warehouse/ramco-cement-2219524806-o59jbjfz.jpg', 
       count: '10 products' 
     },
     { 
-      id: 'ambuja-cement', 
-      name: 'Ambuja Cement', 
+      id: 'Chettinad', 
+      name: 'Chettinad Cement', 
       desc: 'Superior strength Ambuja OPC and PPC cement ensuring crack-resistant buildings.', 
-      img: '/warehouse/ambuja_cement_PPC.webp', 
+      img: '/warehouse/chettinad-cement (1).jpg', 
       count: '12 products' 
     },
     { 
-      id: 'coromandel-cement', 
-      name: 'Coromandel Cement', 
-      desc: 'Coromandel OPC 43/53 and PPC variants engineered for ultimate durability.', 
-      img: '/warehouse/Coromandel_OPC_53.webp', 
+      id: 'UltraTech-cement', 
+      name: 'Ultratech Cement', 
+      desc: ' variants engineered for ultimate durability.', 
+      img: '/warehouse/1_Front_shot_Main_Image_6424b44c-46a2-41fb-b061-2fd56c7731c6.webp', 
       count: '8 products' 
     },
     { 
-      id: 'chettinad-cement', 
-      name: 'Chettinad Cement', 
-      desc: 'Chettinad Supreme variants designed for fast setting and high strength.', 
-      img: '/warehouse/classic.webp', 
+      id: 'Dalmia-cement', 
+      name: 'Dalmia Cement', 
+      desc: 'DalmiaSupreme variants designed for fast setting and high strength.', 
+      img: '/warehouse/ramco-super-fast-cement-packaging-size-50-kg.jpg', 
       count: '16 products' 
     },
     { 
@@ -67,28 +67,28 @@ const subCategoriesData = {
       name: 'Maha Cement', 
       desc: 'Maha OPC 43/53 and PPC cement known for superior binding and longevity.', 
       img: '/warehouse/Maha_OPC 43.webp', 
-      count: '10 products' 
+      count: '100 products' 
     },
     { 
       id: 'ramco-cement', 
       name: 'Ramco Cement & Supercrete', 
       desc: 'Ramco PPC and Supercrete variants trusted for heavy construction and roofing.', 
       img: '/warehouse/Ramco_PPC.webp', 
-      count: '14 products' 
+      count: '140 products' 
     },
     { 
       id: 'sankar-cement', 
       name: 'Sankar Cement (CSK)', 
       desc: 'Classic Sankar CSK cement providing high compressive strength and finish.', 
       img: '/warehouse/Sankar_CSK.webp', 
-      count: '7 products' 
+      count: '700 products' 
     },
     { 
       id: 'white-and-special', 
       name: 'Specialty & White Cement / GGBS', 
       desc: 'White cement, fine GGBS, and special-grade cements for decorative and industrial works.', 
       img: '/warehouse/GGBS_fine.webp', 
-      count: '15 products' 
+      count: '150 products' 
     }
   ],
   steel: [
@@ -97,36 +97,36 @@ const subCategoriesData = {
       id: 'tmt-bars', 
       name: 'TMT Bars', 
       desc: 'High tensile strength TMT bars for earthquake-resistant concrete reinforcement.', 
-      img: '/warehouse/tmt-bars_1783947662.jpg', 
-      count: '58 products' 
+      img: '/warehouse/radha-tmt-550-steel-bars-1000x1000-1.webp', 
+      count: '580 products' 
     },
     { 
       id: 'angle', 
       name: 'Angle', 
       desc: 'High-strength structural angles for framing, brackets, and industrial support.', 
       img: '/warehouse/angle_1783947756 (1).jpg', 
-      count: '0 products' 
+      count: '200 products' 
     },
     { 
       id: 'mesh-binding', 
       name: 'Mesh & Binding', 
       desc: 'Durable steel mesh and binding wires for concrete reinforcement and bundling.', 
       img: '/warehouse/mesh-binding_1783947740.jpg', 
-      count: '1 products' 
+      count: '100 products' 
     },
     { 
       id: 'purlin', 
       name: 'Purlin', 
       desc: 'Roof framing purlins designed to support roof decks and structural loads.', 
       img: '/warehouse/purlin_1783947733.jpg', 
-      count: '0 products' 
+      count: '2000 products' 
     },
     { 
       id: 'roofing-sheets-plates', 
       name: 'Roofing Sheets & Plates', 
       desc: 'Corrugated roofing sheets and steel plates for industrial and shed roofing.', 
       img: '/warehouse/roofing-sheets-plates_1783947715.jpg', 
-      count: '0 products' 
+      count: '2000 products' 
     },
     
     { 
@@ -134,14 +134,14 @@ const subCategoriesData = {
       name: 'Stainless Steel', 
       desc: 'Corrosion-resistant stainless steel sections and sheets for premium applications.', 
       img: '/warehouse/stainless-steel_1783947703.jpg', 
-      count: '0 products' 
+      count: '1500 products' 
     },
     { 
       id: 'steel-pipes-tubes', 
       name: 'Steel Pipes & Tubes', 
       desc: 'Industrial grade steel pipes and hollow tubes for structural and fluid piping.', 
       img: '/warehouse/steel-pipes-tubes_1783947691.jpg', 
-      count: '0 products' 
+      count: '500 products' 
     },
     
     { 
@@ -149,23 +149,23 @@ const subCategoriesData = {
       name: 'Structural Steel', 
       desc: 'Heavy-duty steel beams, channels, and columns for heavy construction.', 
       img: '/warehouse/structural-steel_1783947674.jpg', 
-      count: '17 products' 
+      count: '1700 products' 
     }
   ],
   'flyash-blocks': [
     { 
-      id: 'concrete-pipe', 
-      name: 'Concrete Pipe', 
-      desc: 'High-strength reinforced concrete pipes for drainage, sewage, and water flow systems.', 
-      img: '/warehouse/concrete-pipe_1784532821.jpg', 
-      count: '3 products' 
+      id: 'interlocking fly ash bricks', 
+      name: 'interlocking fly ash bricks', 
+      desc: 'High-strength reinforced interlock brick.', 
+      img: '/warehouse/Interlocking-Bricks.jpg', 
+      count: '2000 products' 
     },
     { 
-      id: 'concrete-wall', 
-      name: 'Concrete Wall', 
+      id: 'paver interlocking fly ash bricks', 
+      name: 'paver interlocking fly ash bricks', 
       desc: 'Precast concrete wall panels and structures for rapid and secure boundary and partition walls.', 
-      img: '/warehouse/concrete-wall_1784532816.jpg', 
-      count: '0 products' 
+      img: '/warehouse/Concrete-Cosmic-Interlocking-Paver-Block.jpg', 
+      count: '2000 products' 
     },
     { 
       id: 'precast-concrete', 
@@ -175,37 +175,66 @@ const subCategoriesData = {
       count: '3 products' 
     },
     { 
-      id: 'ready-mix-concrete', 
-      name: 'READY-MIX CONCRETE (RMC)', 
-      desc: 'Quality-assured ready-mix concrete delivered directly via transit mixers for heavy structures.', 
-      img: '/warehouse/ready-mix-concrete-rmc_1784532761.jpg', 
+      id: 'red bricks', 
+      name: 'Red bricks ', 
+      desc: 'Quality-assured  delivered directly via transit for heavy structures.', 
+      img: '/warehouse/red-brick.webp', 
       count: '6 products' 
     }
   ],
+  'aac-blocks':[
+    { 
+      id: 'Ncl Blocks', 
+      name: 'Ncl blocks ', 
+      desc: 'Quality-assured  delivered directly via transit for heavy structures.', 
+      img: '/warehouse/aac-block.jpg', 
+      count: '600 products' 
+    },
+    { 
+      id: 'Birlanu blocks', 
+      name: 'Birlanu blocks ', 
+      desc: 'Quality-assured  delivered directly via transit for heavy structures.', 
+      img: '/warehouse/birlanu.png', 
+      count: '600 products' 
+    },
+   
+
+
+
+  ],
+
+
   consumables: [
     { id: 'safety-gear', name: 'Site Safety Equipment', desc: 'Helmets, safety belts, boots, and high-visibility vests.', img: '/Product/product12.jpg', count: '35 products' },
     { id: 'fasteners', name: 'Tapes, Nails & Fasteners', desc: 'Industrial tapes, screws, and binding wires.', img: '/Product/product8.jpg', count: '50 products' }
   ],
   'adhesive-paste': [
+     { 
+      id: 'Ramco-adhesive', 
+      name: 'Ramco Adhesives', 
+      desc: 'High-strength solvent cements', 
+      img: '/warehouse/ramco-tile-fix-tiles-paste-t2-of-40kg-50-kg-bag20240102112308.jpeg', 
+      count: '1500 products' 
+    },
     { 
-      id: 'cpvc-pipe-adhesive', 
-      name: 'CPVC & PVC Pipe Adhesives', 
+      id: 'UltraTech-adhesive', 
+      name: 'Ultratech Adhesives', 
       desc: 'High-strength solvent cements and welding solutions for leak-proof pipe and plumbing fittings.', 
-      img: '/warehouse/O2kSNma4Lexz.jpg', 
-      count: '15 products' 
+      img: '/warehouse/tilefixo-x-tra-plus-white-removebg-preview.png', 
+      count: '1500 products' 
     },
     { 
-      id: 'tile-adhesive-white', 
-      name: 'White Tile Adhesives (Roff, Slabfix, Hi-Bond)', 
+      id: 'Chettinad', 
+      name: ' Tile Adhesives (Roff, Slabfix, Hi-Bond)', 
       desc: 'Polymer-modified white tile adhesives for ceramic, vitrified, and marble tiles on walls/floors.', 
-      img: '/warehouse/udKp9w2lUHWt.jpg', 
-      count: '65 products' 
+      img: '/warehouse/product-jpeg-500x500 (1).webp', 
+      count: '650 products' 
     },
     { 
-      id: 'tile-adhesive-grey', 
-      name: 'Grey Tile Adhesives & Mortars', 
+      id: 'Chettinad', 
+      name: ' Tile Adhesives & Mortars', 
       desc: 'Heavy-duty cement-based grey tile adhesives and mortar mixes for durable tile and stone fixing.', 
-      img: '/warehouse/ueoZkCJg1qk3.jpg', 
+      img: '/warehouse/pipe-angle-250x250.webp', 
       count: '80 products' 
     },
     { 
@@ -225,24 +254,24 @@ const subCategoriesData = {
   ],
   painting: [
     { 
-      id: 'interior-paints', 
-      name: 'Interior Paints', 
+      id: 'Asian-paints', 
+      name: 'Asian Paints', 
       desc: 'Rich interior emulsions and smooth wall paints for a luxurious finish inside your home.', 
-      img: '/warehouse/interior-paints_1784103688.jpg', 
+      img: '/warehouse/4-ace-paint-4l-white-asianpaints-original-imafdyj2swhbxynh.webp', 
       count: '166 products' 
     },
     { 
-      id: 'primers-undercoats', 
-      name: 'Primers & Undercoats', 
+      id: '4K Paints', 
+      name: '4k Paints', 
       desc: 'High-quality wall primers and undercoats for strong paint adhesion and longevity.', 
-      img: '/warehouse/primers-undercoats_1783949445.jpg', 
+      img: '/warehouse/new-product-500x500.webp', 
       count: '94 products' 
     },
     { 
-      id: 'exterior-paints', 
+      id: 'Dulux-paints', 
       name: 'Exterior Paints', 
       desc: 'Weatherproof exterior emulsions and weather shields designed to withstand harsh climates.', 
-      img: '/warehouse/exterior-paints_1783949575.jpg', 
+      img: '/warehouse/360_F_307175294_MN5sbf6gLKR6CkDrMp9Qy5dqIBNlNOmZ.jpg', 
       count: '95 products' 
     },
     { 
@@ -272,14 +301,14 @@ const subCategoriesData = {
       id: 'wires-cables', 
       name: 'Wires & Cables', 
       desc: 'Flame-retardant copper wiring, flexible cables, and armored power lines.', 
-      img: '/warehouse/wires-cables_1783946178.jpg', 
+      img: '/warehouse/black-pvc-insulated-copper-wire-500x500.webp', 
       count: '69 products' 
     },
     { 
       id: 'switches-sockets', 
       name: 'Switches & Sockets', 
       desc: 'Modular switches, power sockets, cover plates, and designer electrical accessories.', 
-      img: '/warehouse/switches-sockets_1783946193.jpg', 
+      img: '/warehouse/light-switches-and-electrical-sockets-500x500.webp', 
       count: '36 products' 
     },
     { 

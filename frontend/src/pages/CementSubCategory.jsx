@@ -6,10 +6,10 @@ import { company } from '../mock/mock';
 // Cement sub-categories data
 const cementSubCategories = [
   {
-    id: 'opc',
-    name: 'Ordinary Portland Cement (OPC)',
-    desc: 'High-grade OPC 53 and OPC 43 cement for high-strength structures and RCC works.',
-    img: '/warehouse/cement.jpg',
+    id: 'Ramco',
+    name: 'Ramco',
+    desc: 'High-grade  cement for high-strength structures and RCC works.',
+    img: '/warehouse/Ramco-Super-Grade-Cement-300x300.jpg',
     count: '25 products'
   },
   {
