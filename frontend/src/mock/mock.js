@@ -110,6 +110,12 @@ export const categories = [
     img: '/warehouse/top-view-interior-luxury-sample-materials-including-black-gery-marble_949228-85961.avif', 
     desc: 'Aesthetically pleasing floor, wall, and vitrified tiles available in diverse textures.' 
   },
+   { 
+    id: 'Plywood & Timber', 
+    name: 'Plywood & Timber', 
+    img: '/warehouse/istockphoto-2086368112-612x612.jpg', 
+    desc: 'Aesthetically pleasing floor, wall, and vitrified tiles available in diverse textures.' 
+  },
 ];
 
 export const bestPractices = [

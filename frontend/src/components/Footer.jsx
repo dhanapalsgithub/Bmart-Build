@@ -10,18 +10,12 @@ const Footer = () => {
         <div>
           <img src={company.logo} alt="BMART" className="h-16 w-auto object-contain bg-white rounded-lg p-2 mb-4" />
           <p className="text-sm leading-relaxed text-gray-400">
-            
             No.145, Kumaran Nagar,
-
-Trichy panjapur Tanjore  Bye pass 
-
-Tiruchirappalli,
-
-Tamil Nadu - 620021 <br></br>
-BMART is your one-stop construction material supplier serving Across South India,
-Branches - Tamil nadu, kerala, Karnataka,Telangana,Hyderabad
-
-
+            Trichy panjapur Tanjore  Bye pass
+            Tiruchirappalli,
+            Tamil Nadu - 620021 <br></br>
+            BMART is your one-stop construction material supplier serving Across South India,
+            Branches - Tamil nadu, kerala, Karnataka,Telangana,Hyderabad
           </p>
           <div className="flex gap-3 mt-5">
             <a href={company.social.instagram} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-gold hover:text-[color:var(--bmart-ink)] transition-colors"><Instagram size={18} /></a>
@@ -44,8 +38,15 @@ Branches - Tamil nadu, kerala, Karnataka,Telangana,Hyderabad
         <div>
           <h4 className="text-white font-bold text-lg mb-5">Categories</h4>
           <ul className="space-y-3 text-sm">
-            {categories.slice(0, 6).map((c) => (
-              <li key={c.id}><Link to="/products" className="hover:text-brand-gold transition-colors">{c.name}</Link></li>
+            {categories.slice(0, 11).map((c) => (
+              <li key={c.id}>
+                <Link
+                  to={`/products/${c.id}`}
+                  className="hover:text-brand-gold transition-colors"
+                >
+                  {c.name}
+                </Link>
+              </li>
             ))}
           </ul>
         </div>
@@ -53,8 +54,7 @@ Branches - Tamil nadu, kerala, Karnataka,Telangana,Hyderabad
         <div>
           <h4 className="text-white font-bold text-lg mb-5">Get in Touch</h4>
           <ul className="space-y-4 text-sm">
-           
-            <li className="flex items-center gap-3"><Phone size={18} className="text-brand-gold shrink-0" /> <a href={`tel:${company.phone.replace(/\s/g,'')}`} className="hover:text-brand-gold">{company.phone}</a></li>
+            <li className="flex items-center gap-3"><Phone size={18} className="text-brand-gold shrink-0" /> <a href={`tel:${company.phone.replace(/\s/g, '')}`} className="hover:text-brand-gold">{company.phone}</a></li>
             <li className="flex items-center gap-3"><Mail size={18} className="text-brand-gold shrink-0" /> <a href={`mailto:${company.email}`} className="hover:text-brand-gold break-all">{company.email}</a></li>
           </ul>
         </div>
