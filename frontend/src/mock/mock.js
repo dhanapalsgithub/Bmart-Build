@@ -30,7 +30,7 @@ export const heroPoster = 'https://images.unsplash.com/photo-1533378890784-b2a5b
 
 // Updated Warehouse images
 export const warehouseImage = '/warehouse/ChatGPT Image Sep 11, 2026, 09_25_24 PM.png';
-export const warehouseImage1 = '/warehouse/steel.jpg';
+export const warehouseImage1 = '/warehouse/360_F_462450038_F9WxwA4rHV4M30XgVYXkWoJPKZ09ec0v.jpg';
 export const warehouseImage2 = '/Product/product3.png';
 export const warehouseImage3 = '/warehouse/strcutural steel.jpg';
 export const warehouseImage4 = '/warehouse/cement.jpg';
@@ -62,6 +62,13 @@ export const categories = [
     img: '/warehouse/reinforcing-steel-bars-building-armature-white-background_104576-212.avif', 
     desc: 'TMT steel bars and structural steel rods ensuring maximum tensile strength for construction.' 
   },
+
+  { 
+    id: 'Blue Metals', 
+    name: 'Blue Metals / m-sand, p-sand', 
+    img: '/warehouse/Arena-Grava-Mixto-300x300.webp', 
+    desc: 'Eco-friendly, durable flyash bricks and heavy-duty solid blocks for robust wall construction.' 
+  },
   { 
     id: 'flyash-blocks', 
     name: 'Flyash Bricks / Solid Block', 
@@ -81,9 +88,9 @@ export const categories = [
     desc: 'Specialized high-bond tile adhesives and joint pastes for seamless laying and superior grip.' 
   },
   { 
-    id: 'consumables', 
-    name: 'Consumable Item', 
-    img: '/warehouse/package.jpg', 
+    id: 'consumables And Safety Items', 
+    name: 'consumables And Safety Items', 
+    img: '/warehouse/construction-tools-safety-equipment-icons-set_1090356-10782.avif', 
     desc: 'Essential site consumables including safety gear, tapes, fasteners, and utility tools.' 
   },
   { 
@@ -99,15 +106,15 @@ export const categories = [
     desc: 'Wiring, conduits, switches, distribution boards, and fittings for safe setups.' 
   },
   { 
-    id: 'plumbing', 
-    name: 'Plumbing Material', 
-    img: '/warehouse/pvc-pipe-fitting-pvc-pipe-connections-on-white-background-free-photo.jpg', 
+    id: 'plumbing And Sanitary Ware', 
+    name: 'plumbing And Sanitary Ware', 
+    img: '/warehouse/sanitary-engineering-concept-with-sink-vector-48351422.avif', 
     desc: 'UPVC, CPVC pipes, fittings, valves, and water storage solutions for reliable systems.' 
   },
   { 
     id: 'tiles', 
     name: 'Tiles', 
-    img: '/warehouse/top-view-interior-luxury-sample-materials-including-black-gery-marble_949228-85961.avif', 
+    img: '/warehouse/tiles_1784004260 (1).jpg', 
     desc: 'Aesthetically pleasing floor, wall, and vitrified tiles available in diverse textures.' 
   },
    { 

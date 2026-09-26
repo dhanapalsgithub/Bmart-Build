@@ -152,24 +152,70 @@ const subCategoriesData = {
       count: '1700 products' 
     }
   ],
+
+  'Blue Metals':[
+     { 
+      id: 'Crushed Stone Construction Aggregate', 
+      name: 'Crushed Stone Construction Aggregate', 
+      desc: 'Crushed Stone Construction Aggregate.', 
+      img: '/warehouse/images (1).jfif', 
+      count: '2000 products' 
+    },
+     { 
+      id: 'M-sand', 
+      name: 'M-sand', 
+      desc: 'M-sand.', 
+      img: '/warehouse/M_sand.webp', 
+      count: '2000 products' 
+    },
+    { 
+      id: 'Gypsum and plaster of paris', 
+      name: 'Gypsum and plater of paris', 
+      desc: 'High-strength reinforced  brick.', 
+      img: '/warehouse/gypsum-plaster-of-paris_1784532857.jpg', 
+      count: '2000 products' 
+    },
+    { 
+      id: 'Construction Sand for Building & Civil Work', 
+      name: 'Construction Sand for Building & Civil Work', 
+      desc: 'Construction Sand for Building & Civil Work.', 
+      img: '/warehouse/sisodara_reti_construction_sand_for_building_civil_1789983649.png', 
+      count: '2000 products' 
+    },
+    { 
+      id: 'P. Sand', 
+      name: 'P. Sand', 
+      desc: 'P. Sand.', 
+      img: '/warehouse/P_sand.webp', 
+      count: '2000 products' 
+    },
+
+  ],
   'flyash-blocks': [
      { 
       id: 'fly ash bricks', 
       name: 'fly ash bricks', 
       desc: 'High-strength reinforced  brick.', 
+      img: '/warehouse/product-jpeg-500x500 (2).webp', 
+      count: '2000 products' 
+    },
+    { 
+      id: 'fly ash bricks', 
+      name: 'Solid bricks', 
+      desc: 'High-strength reinforced  brick.', 
       img: '/warehouse/flyash-bricks-500x500.webp', 
       count: '2000 products' 
     },
     { 
-      id: 'interlocking fly ash bricks', 
-      name: 'interlocking fly ash bricks', 
+      id: 'interlocking  bricks', 
+      name: 'interlocking  bricks', 
       desc: 'High-strength reinforced interlock brick.', 
       img: '/warehouse/Interlocking-Bricks.jpg', 
       count: '2000 products' 
     },
     { 
-      id: 'paver interlocking fly ash bricks', 
-      name: 'paver interlocking fly ash bricks', 
+      id: 'paver interlocking  bricks', 
+      name: 'paver interlocking  bricks', 
       desc: 'Precast concrete wall panels and structures for rapid and secure boundary and partition walls.', 
       img: '/warehouse/Concrete-Cosmic-Interlocking-Paver-Block.jpg', 
       count: '2000 products' 
@@ -226,9 +272,21 @@ const subCategoriesData = {
   ],
 
 
-  consumables: [
-    { id: 'safety-gear', name: 'Site Safety Equipment', desc: 'Helmets, safety belts, boots, and high-visibility vests.', img: '/Product/product12.jpg', count: '35 products' },
-    { id: 'fasteners', name: 'Tapes, Nails & Fasteners', desc: 'Industrial tapes, screws, and binding wires.', img: '/Product/product8.jpg', count: '50 products' }
+  'consumables And Safety Items': [
+    { 
+      id: 'saftey items', 
+      name: 'Safety Items', 
+      desc: 'High-strength solvent cements', 
+      img: '/warehouse/construction-tools-safety-equipment-icons-set_1090356-10782 (1).avif', 
+      count: '1500 products' 
+    },
+     { 
+      id: 'consumables Items', 
+      name: 'Consumables Items', 
+      desc: 'High-strength solvent cements', 
+      img: '/warehouse/pngtree-isolated-on-a-white-background-bolts-nuts-and-washers-photo-image_16203166.jpg', 
+      count: '1500 products' 
+    },
   ],
   'adhesive-paste': [
      { 
@@ -355,7 +413,7 @@ const subCategoriesData = {
       count: '20products' 
     }
   ],
-  plumbing: [
+  'plumbing And Sanitary Ware': [
     { 
       id: 'drainage-waste-fittings', 
       name: 'Drainage & Waste Fittings', 
@@ -401,26 +459,47 @@ const subCategoriesData = {
   ],
   tiles: [
     { 
-      id: 'floor-tiles', 
-      name: 'Floor Tiles', 
+      id: 'Kajaria-tiles', 
+      name: 'Kajaria', 
       desc: 'Premium glossy and matte finish vitrified and ceramic floor tiles for living spaces and interiors.', 
-      img: '/warehouse/floor-tiles_1784006369.jpg', 
+      img: '/warehouse/H725b1dafbb0d4166a146e386b05f714cQ.jpg_300x300.avif', 
       count: '800products' 
     },
     { 
       id: 'outdoor-parking-tiles', 
-      name: 'Outdoor & Parking Tiles', 
+      name: 'KAG Tiles', 
       desc: 'Heavy-duty anti-skid parking tiles and outdoor pavers designed for driveways and gardens.', 
-      img: '/warehouse/outdoor-parking-tiles_1784006389.jpg', 
+      img: '/warehouse/images (2).jfif', 
       count: '2000products',
     },
     { 
       id: 'wall-tiles', 
-      name: 'Wall Tiles', 
+      name: 'Anuj ', 
       desc: 'Designer ceramic and vitrified wall tiles perfect for kitchens, bathrooms, and feature walls.', 
-      img: '/warehouse/wall-tiles_1784006377.jpg', 
+      img: '/warehouse/Karaikal_Page_1.jpg', 
       count: '200products',
-    }
+    },
+    { 
+      id: 'wall-tiles', 
+      name: 'Jhonson ', 
+      desc: 'Designer ceramic and vitrified wall tiles perfect for kitchens, bathrooms, and feature walls.', 
+      img: '/warehouse/XAREGR000000S4.jpg', 
+      count: '200products',
+    },
+    { 
+      id: 'wall-tiles', 
+      name: 'Somany ', 
+      desc: 'Designer ceramic and vitrified wall tiles perfect for kitchens, bathrooms, and feature walls.', 
+      img: '/warehouse/images (3).jfif', 
+      count: '200products',
+    },
+     { 
+      id: 'wall-tiles', 
+      name: 'Color Tiles ', 
+      desc: 'Designer ceramic and vitrified wall tiles perfect for kitchens, bathrooms, and feature walls.', 
+      img: '/warehouse/pattern-texture-wallpaper-preview.jpg', 
+      count: '200products',
+    },
   ],
 
  'Plywood & Timber': [

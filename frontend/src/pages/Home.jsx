@@ -14,21 +14,23 @@ const SectionTitle = ({ eyebrow, title, center, light }) => (
 
 // Local public folder banner slider list
 const heroSlides = [
-  '/Slide/download25.png',
-  '/Slide/download30.png',
-  '/Slide/download35.png',
+  '/Slide/download43.png',
+  '/Slide/download44.png',
+  '/Slide/download45.png',
+  '/Slide/download51.png',
   '/Slide/download29.png',
-  '/Slide/download31.png',
+  '/Slide/download46.png',
   '/Slide/download18.png',
-  '/Slide/download37.png',
+  '/Slide/download47.png',
   '/Slide/download32.png',
-  '/Slide/download36.png',
-  '/Slide/download38.png',
-  '/Slide/download34.png',
+  '/Slide/download48.png',
+  '/Slide/download49.png',
+  '/Slide/download50.png',
   '/Slide/download39.png',
   '/Slide/download42.png',
   '/Slide/download41.png',
   '/Slide/download40.png',
+  
 ];
 
 const Home = () => {
