@@ -43,7 +43,7 @@ export const warehouseImage10 = '/Product/product11.jpg';
 export const warehouseImage11 = '/Product/product12.jpg';
 export const warehouseImage12 = 'https://gobuildmart.com/_next/static/media/Block%20ACC%20Mobile-010.b7255091.svg';
 export const warehouseImage13 = 'https://cdn.gobuildmart.com/products/images/86xa8wKfFwmB.jpg';
-export const warehouseImage14 = 'blob:https://chatgpt.com/6ecde5d2-c20f-4a57-9413-e324e33a6a20';
+export const warehouseImage14 = 'https://chatgpt.com/6ecde5d2-c20f-4a57-9413-e324e33a6a20';
 export const warehouseImage15 = 'https://cdn.gobuildmart.com/products/images/RJnDjWi7Y0qs.jpg';
 
 export const qualityImage = 'https://images.unsplash.com/photo-1599707254554-027aeb4deacd';
