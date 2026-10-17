@@ -16,7 +16,7 @@ const subCategoriesData = {
     { 
       id: 'Chettinad', 
       name: 'Chettinad Cement', 
-      desc: 'Superior strength Ambuja OPC and PPC cement ensuring crack-resistant buildings.', 
+      desc: 'Superior strength Chettinad OPC and PPC cement ensuring crack-resistant buildings.', 
       img: '/warehouse/chettinad-cement (1).jpg', 
       count: '120products' 
     },
@@ -165,16 +165,10 @@ const subCategoriesData = {
       id: 'M-sand', 
       name: 'M-sand', 
       desc: 'M-sand.', 
-      img: '/warehouse/M_sand.webp', 
+      img: '/warehouse/msand-1.webp', 
       count: '2000 products' 
     },
-    { 
-      id: 'Gypsum and plaster of paris', 
-      name: 'Gypsum and plater of paris', 
-      desc: 'High-strength reinforced  brick.', 
-      img: '/warehouse/gypsum-plaster-of-paris_1784532857.jpg', 
-      count: '2000 products' 
-    },
+   
     { 
       id: 'Construction Sand for Building & Civil Work', 
       name: 'Construction Sand for Building & Civil Work', 
@@ -186,7 +180,7 @@ const subCategoriesData = {
       id: 'P. Sand', 
       name: 'P. Sand', 
       desc: 'P. Sand.', 
-      img: '/warehouse/P_sand.webp', 
+      img: '/warehouse/p-sand.jpg', 
       count: '2000 products' 
     },
 
@@ -481,7 +475,7 @@ const subCategoriesData = {
     },
     { 
       id: 'wall-tiles', 
-      name: 'Jhonson ', 
+      name: 'Johnson tiles', 
       desc: 'Designer ceramic and vitrified wall tiles perfect for kitchens, bathrooms, and feature walls.', 
       img: '/warehouse/XAREGR000000S4.jpg', 
       count: '200products',
