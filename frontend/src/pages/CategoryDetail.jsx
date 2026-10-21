@@ -270,14 +270,14 @@ const subCategoriesData = {
     { 
       id: 'saftey items', 
       name: 'Safety Items', 
-      desc: 'High-strength solvent cements', 
+      desc: 'safety helmet and gloves , safety glasses', 
       img: '/warehouse/construction-tools-safety-equipment-icons-set_1090356-10782 (1).avif', 
       count: '1500 products' 
     },
      { 
       id: 'consumables Items', 
       name: 'Consumables Items', 
-      desc: 'High-strength solvent cements', 
+      desc: 'High-strength fastners,washers', 
       img: '/warehouse/pngtree-isolated-on-a-white-background-bolts-nuts-and-washers-photo-image_16203166.jpg', 
       count: '1500 products' 
     },
