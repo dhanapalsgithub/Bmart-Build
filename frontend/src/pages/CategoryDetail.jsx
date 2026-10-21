@@ -272,7 +272,7 @@ const subCategoriesData = {
       name: 'Safety Items', 
       desc: 'safety helmet and gloves , safety glasses', 
       img: '/warehouse/construction-tools-safety-equipment-icons-set_1090356-10782 (1).avif', 
-      count: '1500 products' 
+      count: '1500 product' 
     },
      { 
       id: 'consumables Items', 
